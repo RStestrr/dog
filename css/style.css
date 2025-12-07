@@ -1,3 +1,7 @@
-html {
- color: #181817;
+:root {
+    --main-color: #181817;
+}
+
+body {
+    color: var(--main-color);
 }
