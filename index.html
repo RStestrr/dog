@@ -5,89 +5,249 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Dog Club</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100..900&family=Rowdies&display=swap"
+        rel="stylesheet">
     <link rel="stylesheet" href="./css/style.css">
 </head>
 
 <body>
-    <header>
-        <nav>
-            <a href="#">logo</a>
-            <ul>
-                <li>Less talk</li>
-                <li>Service category</li>
-                <li>Happy customer</li>
-                <li>Contact</li>
-            </ul>
-        </nav>
-        <a href="#cart">cart</a>
-        <button>Contact us</button>
+    <header class="header">
+        <div class="container">
+            <div class="header-container">
+                <div>
+                    <a href="#"><img src="./images/logo.svg" alt="logo"></a>
+                </div>
+                <nav class="heder-nav">
+                    <ul class="header-links">
+                        <li><a href="#" class="link">Less talk</a></li>
+                        <li><a href="#" class="link">Service category</a></li>
+                        <li><a href="#" class="link">Happy customer</a></li>
+                        <li><a href="#" class="link">Contact</a></li>
+                    </ul>
+                </nav>
+                <div class="header-nav-right">
+                    <a href="#cart"><img src="./images/cart.svg" alt="cart"></a>
+                    <button>Contact us</button>
+                </div>
+            </div>
+        </div>
     </header>
     <main>
-        <section>
-            <h2>Taking care of your your Smart Dog!</h2>
-            Human-canine bonding is the relationship between dog and humans
-            <button>Explore more</button>
+        <section class="care-section">
+            <div class="container">
+                <div class="care-container">
+                    <div class="text">
+                        <h1 class="main-title">Taking care of your your Smart Dog!</h1>
+                        <div class="care-text-wrapper">
+                            <p class="content-text">
+                                Human-canine bonding is the relationship between dog and humans
+                            </p>
+                            <button class="content-button">Explore more</button>
+                        </div>
+                    </div>
+                    <!-- TODO - add dog-around bg -->
+                    <!-- TODO - make care-dog as ::after -->
+                    <div class="care-dog"></div>
+                </div>
+            </div>
+            <!-- bg decorations -->
+            <svg class="paw paw1" width="102" height="127">
+                <use href="./images/svg/paws.svg#paw1"></use>
+            </svg>
+            <svg class="paw paw2" width="128" height="124">
+                <use href="./images/svg/paws.svg#paw2"></use>
+            </svg>
         </section>
-        <section>
-            <h2>Less talk and more walk</h2>
-            Sometimes our career, lifestyle, our routines can make it difficult to provide your pet with recommended
-            amount exercise
-            that they need. Which is why, it's oky to use an extra hand in walking dogs so they are in perfect shape,
-            mentally an physically.
-            <button>Explore more</button>
+        <section class="walk-section">
+            <div class="container">
+                <div class="walk-container">
+                    <div>
+                        <!-- TODO - add walk around bg -->
+                        <!-- TODO - make walk-dog as ::before -->
+                        <img src="./images/walk-dog.png" alt="Dog Image">
+                    </div>
+                    <div>
+                        <h2>Less talk and more walk</h2>
+                        <p class="content-text">
+                            Sometimes our career, lifestyle, our routines can make it difficult to provide your pet with
+                            recommended
+                            amount exercise
+                            that they need. Which is why, it's oky to use an extra hand in walking dogs so they are in
+                            perfect
+                            shape,
+                            mentally an physically.
+                        </p>
+                        <button class="content-button">Explore more</button>
+                    </div>
+                </div>
+            </div>
         </section>
-        <section>
-            <h2>Services category</h2>
-            <ul>
-                <li><a href="#">Grooming</a></li>
-                <li><a href="#">Nutrition</a></li>
-                <li><a href="#">Training</a></li>
-                <li><a href="#">Bathing</a></li>
-            </ul>
+        <section class="services-section">
+            <div class="container">
+                <div class="service-category-title">
+                    <h2>Services category</h2>
+                </div>
+                <nav class="pages-nav">
+                    <ul class="nav-cards">
+                        <li class="link">
+                            <a href="#">
+                                <img src="./images/pages/grooming.svg" alt="Grooming">
+                            </a>
+                            <a href="#">
+                                Grooming
+                            </a>
+                        </li>
+                        <li class="link">
+                            <a href="#">
+                                <img src="./images/pages/nutrition.svg" alt="Nutrition">
+                            </a>
+                            <a href="#">
+                                Nutrition
+                            </a>
+                        </li>
+                        <li class="link">
+                            <a href="#">
+                                <img src="./images/pages/training.svg" alt="Training">
+                            </a>
+                            <a href="#">
+                                Training
+                            </a>
+                        </li>
+                        <li class="link">
+                            <a href="#">
+                                <img src="./images/pages/bathing.svg" alt="Bathing">
+                            </a>
+                            <a href="#">
+                                Bathing
+                            </a>
+                        </li>
+                    </ul>
+                    <div class="nav-more">
+                        <a href="#">more services</a>
+                        <a class="arrow" href="#">
+                            <img src="./images/pages/arrow.svg" alt="Arrow">
+                        </a>
+                    </div>
+                </nav>
+            </div>
         </section>
-        <section>
-            <h2>Happy customer</h2>
-            <!-- slider with review -->
+        <section class="review-section">
+            <div class="container">
+                <h2>Happy customer</h2>
+                <!-- slider with review -->
+                <div class="review-slider">
+                    <!-- TODO - make arrows as ::before and ::after -->
+                    <svg class="slider-arrow" width="44" height="44">
+                        <use href="./images/svg/icons.svg#icon-arrow-left"></use>
+                    </svg>
+                    <div class="slider-content">
+                        <div class="review-card card_1">
+                            <!-- <img src="images/slider/1.jpg" alt="1"> -->
+                            <div class="bottom">
+                                <p class="title">Christin & Tom</p>
+                                <p>Love the overall workout experience!</p>
+                            </div>
+                        </div>
+                        <div class="review-card card_2">
+                            <!-- <img src="images/slider/2.jpg" alt="2"> -->
+                            <div class="bottom">
+                                <p class="title">Anna & Tobby</p>
+                                <p>Amazing Products & Delivery on time.</p>
+                            </div>
+                        </div>
+                        <div class="review-card card_3">
+                            <!-- <img src="images/slider/3.jpg" alt="3"> -->
+                            <div class="bottom">
+                                <p class="title">Sindy & Kitch</p>
+                                <p>Great job with the trainer!</p>
+                            </div>
+                        </div>
+                    </div>
+                    <svg class="slider-arrow rotate" width="44" height="44">
+                        <use href="./images/svg/icons.svg#icon-arrow-left"></use>
+                    </svg>
+                </div>
+            </div>
+            <!-- bg decorations -->
+            <svg class="paw paw3" width="128" height="124">
+                <use href="./images/svg/paws.svg#paw3"></use>
+            </svg>
         </section>
-        <section>
-            <h2>Our experts will take care of your friend</h2>
-            <!-- contact form -->
-            <div>
-                <input type="text" placeholder="Your name">
-                <input type="text" placeholder="Pat name">
-                <input type="text" placeholder="Your phone">
-                <input type="text" placeholder="Your email">
-                <button>Contact us</button>
-                <!-- I agree to the privacy policy -->
-                <input type="checkbox" name="" id="">
+        <section class="contact-section">
+            <div class="contact-wrapper">
+                <!-- TODO make contact-dog-right.png ::before element -->
+                <img src="./images/contact-dog-right.png" class="img-dog-right" alt="dog">
+                <div class="container">
+                    <div class="contact-content">
+                        <h2>Our experts will take care of your friend</h2>
+                        <p class="contact_note">Fill out the form so we can contact you!</p>
+                        <!-- contact form -->
+                        <div class="contact-form">
+                            <input class="input-text" type="text" name="name" id="name" placeholder="Your name">
+                            <input class="input-text" type="text" name="pat-name" id="pat-name" placeholder="Pat name">
+                            <input class="input-text" type="tel" name="phone" id="phone" placeholder="Your phone">
+                            <input class="input-text" type="email" name="email" id="email" placeholder="Your email">
+                            <button>Contact us</button>
+                            <!-- I agree to the privacy policy -->
+                            <div>
+                                <input type="checkbox" name="privacy" id="privacy">
+                                <label for="privacy">I agree to the privacy policy</label>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- TODO make contact-dog-left.png ::after element -->
+                <img src="./images/contact-dog-left.png" class="img-dog-left" alt="dog">
             </div>
         </section>
     </main>
-    <footer>
-        <nav>
-            <a href="#">logo</a>
-            <!-- footer social -->
-            <div class="social">
-                <a href="#">instagram</a>
-                <a href="#">facebook</a>
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-wrapper">
+                <div class="footer-content">
+                    <div class="footer-item logo-social">
+                        <a href="#"><img src="./images/logo-footer.svg" alt="logo-footer"></a>
+                        <!-- footer social -->
+                        <div class="social">
+                            <a href="#">
+                                <svg width="32" height="32" class="footer-social-icon">
+                                    <use href="./images/svg/icons.svg#icon-instagram"></use>
+                                </svg>
+                            </a>
+                            <a href="#">
+                                <svg width="32" height="32" class="footer-social-icon">
+                                    <use href="./images/svg/icons.svg#icon-facebook"></use>
+                                </svg>
+                            </a>
+                        </div>
+                    </div>
+                    <nav class="footer-item">
+                        <ul class="footer-links">
+                            <li><a href="#" class="link">Less talk</a></li>
+                            <li><a href="#" class="link">Service category</a></li>
+                            <li><a href="#" class="link">Happy customer</a></li>
+                            <li><a href="#" class="link">Contact</a></li>
+                        </ul>
+                    </nav>
+                    <div class="footer-item footer-contact-form">
+                        <input type="email" id="footer-email" placeholder="Your email">
+                        <input type="text" id="footer-cmc" placeholder="Your cmc">
+                        <button>Contact us</button>
+                        <!-- I agree to the privacy policy -->
+                        <div>
+                            <input type="checkbox" name="privacy-footer" id="privacy-footer">
+                            <label for="privacy-footer">I agree to the privacy policy</label>
+                        </div>
+                    </div>
+                </div>
+                <!-- TODO make dog-footer ::after element -->
+                <img class="dog-footer" src="./images/dog-footer.png" alt="dog footer">
             </div>
-            <ul>
-                <li>Less talk</li>
-                <li>Service category</li>
-                <li>Happy customer</li>
-                <li>Contact</li>
-            </ul>
-        </nav>
-        <div class="contact_form">
-            <input type="text" placeholder="Your email">
-            <input type="text" placeholder="Your cmc">
-            <button>Contact us</button>
-
-            <!-- I agree to the privacy policy -->
-            <input type="checkbox" name="" id="">
         </div>
     </footer>
-
+    <!-- decor -->
 </body>
 
 </html>
