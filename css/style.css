@@ -204,6 +204,19 @@ body {
     text-align: center;
 }
 
+/* reset slider arrow button */
+.review-slider button {
+    appearance: none;
+    -webkit-appearance: none;
+    border: none;
+    background: transparent;
+    padding: 0;
+    margin: 0;
+    font: inherit;
+    color: inherit;
+    cursor: pointer;
+}
+
 .slider-arrow {
     fill: var(--color-blue);
 }
