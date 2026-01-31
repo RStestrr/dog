@@ -5,7 +5,7 @@
     --color-accent-lite: #FFAA00;
     --color-accent-hover: #FCB62A;
     --color-footer: #FFFAF3;
-    --color-blue: #839AA9;
+    --color-blue: #8799a5;
     --color-semi-white: #F1F3FF;
 }
 
@@ -157,7 +157,8 @@ body {
     width: 500px;
 }
 
-.care-dog {
+.care-container::after {
+    content: '';
     margin-top: 5%;
 
     background-image: url(../images/care-dog.png);
