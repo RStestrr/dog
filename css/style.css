@@ -4,7 +4,7 @@
     --color-accent: #FF9F0E;
     --color-accent-lite: #FFAA00;
     --color-accent-hover: #FCB62A;
-    --color-footer: #FFFAF3;
+    --color-lite-white: #FFFAF3;
     --color-blue: #8799a5;
     --color-semi-white: #F1F3FF;
 }
@@ -419,7 +419,7 @@ body {
 }
 
 .footer {
-    background-color: var(--color-footer);
+    background-color: var(--color-lite-white);
     padding: 32px 0;
 }
 
@@ -460,4 +460,54 @@ body {
 .footer .dog-footer {
     width: 292px;
     height: 305px;
+}
+
+/* modal */
+
+.backdrop {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(0, 0, 0, 0.5);
+}
+
+.modal {
+    position: relative;
+
+    width: 60%;
+    height: 80%;
+
+    background: var(--color-lite-white);
+    border-radius: 32px;
+}
+
+.backdrop.is-hidden {
+    display: none;
+}
+
+.modal-btn-close {
+    position: absolute;
+    padding: 0;
+    width: 32px;
+    height: 32px;
+    top: 40px;
+    right: 40px;
+    background-image: url(../images/modal-close.svg);
+    background-repeat: no-repeat;
+    background-color: transparent;
+}
+
+.modal-btn-close:hover {
+    background-color: transparent;
+}
+
+.modal-content {
+    padding: 100px;
 }

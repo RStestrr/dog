@@ -29,7 +29,7 @@
                 </nav>
                 <div class="header-nav-right">
                     <a href="#cart"><img src="./images/cart.svg" alt="cart"></a>
-                    <button>Contact us</button>
+                    <button class="modal-btn-open" type="button">Contact us</button>
                 </div>
             </div>
         </div>
@@ -47,7 +47,7 @@
                             <button class="content-button">Explore more</button>
                         </div>
                     </div>
-                    <!-- TODO - add dog-around bg -->
+                    <!-- TODO - add dog-around bg to match after dog elm-->
                 </div>
             </div>
             <!-- bg decorations -->
@@ -248,7 +248,16 @@
             </div>
         </div>
     </footer>
-    <!-- decor -->
+    <!-- modal -->
+    <div class="backdrop is-hidden">
+        <div class="modal">
+            <button class="modal-btn-close" type="button"></button>
+            <div class="modal-content">
+                <h2>Our experts will take care of your friend</h2>
+            </div>
+        </div>
+    </div>
+    <script src="./js/modal.js"></script>
 </body>
 
 </html>
