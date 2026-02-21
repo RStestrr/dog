@@ -1,6 +1,6 @@
 # dog
 
-Learning HTML
+Learning HTML --- lesson 14
 
 ## Spacing and Offset Principles
 
@@ -19,3 +19,11 @@ In another words:
 **Example:**
 
 - Child `<p>` then another child `<p>` with margin-top
+
+## Z-index works only with elm with positions not static (relative, absolute, fixed)
+
+## Transform common use
+ - transform: rotate(180deg); // rotate;
+ - transform: translateX: 100% // offset ouf screen;
+ on click, move back to screen
+ - transform: translateX: 0;

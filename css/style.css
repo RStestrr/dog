@@ -101,7 +101,7 @@ body {
 }
 
 .header {
-    margin-top: 32px;
+    padding-top: 32px;
 }
 
 .header-container {
@@ -254,6 +254,11 @@ body {
     padding-top: 326px;
     color: var(--color-semi-white);
     font-size: 14px;
+    transition: transform 0.3s;
+}
+
+.review-card:hover {
+    transform: scale(1.05);
 }
 
 .review-card.card_1 {
@@ -400,6 +405,7 @@ body {
 
 .link {
     color: var(--color-main);
+    transition: color 0.3s;
 }
 
 .link:hover {
@@ -476,6 +482,14 @@ body {
     right: 0;
     bottom: 0;
     background-color: rgba(0, 0, 0, 0.5);
+
+    transition: opacity 0.3s, visibility 0.3s;
+}
+
+.backdrop.is-hidden {
+    opacity: 0;
+    visibility: hidden;
+    pointer-events: none;
 }
 
 .modal {
@@ -483,13 +497,11 @@ body {
 
     width: 60%;
     height: 80%;
+    max-width: 800px;
+    max-height: 800px;
 
     background: var(--color-lite-white);
     border-radius: 32px;
-}
-
-.backdrop.is-hidden {
-    display: none;
 }
 
 .modal-btn-close {
@@ -497,8 +509,10 @@ body {
     padding: 0;
     width: 32px;
     height: 32px;
-    top: 40px;
-    right: 40px;
+    top:0;
+    right: 0;
+    margin-top: 40px;
+    margin-right: 40px;
     background-image: url(../images/modal-close.svg);
     background-repeat: no-repeat;
     background-color: transparent;
