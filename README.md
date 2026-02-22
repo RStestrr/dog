@@ -27,3 +27,6 @@ In another words:
  - transform: translateX: 100% // offset ouf screen;
  on click, move back to screen
  - transform: translateX: 0;
+
+ ## Hot keys
+CMD + M // wrap with div for example
