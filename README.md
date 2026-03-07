@@ -1,6 +1,6 @@
 # dog
 
-Learning HTML --- lesson 14
+Learning HTML --- lesson 16
 
 ## Spacing and Offset Principles
 
@@ -27,6 +27,10 @@ In another words:
  - transform: translateX: 100% // offset ouf screen;
  on click, move back to screen
  - transform: translateX: 0;
+
+ ## checkbox
+ - we cannot style it, we should visually hide checkbox input, and leave label.
+ - then we need to create wrapper with relative position and add absolute position before to the label an style it
 
  ## Hot keys
 CMD + M // wrap with div for example

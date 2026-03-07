@@ -56,6 +56,35 @@ h2 {
     font-size: 56px;
 }
 
+.checkbox_wrapper {
+    position: relative;
+}
+
+.checkbox_wrapper input {
+    appearance: none;
+}
+
+.checkbox_wrapper input:checked + label::before {
+    background-color: #FF9F0E;
+}
+
+.checkbox_wrapper label {
+    padding-left: 20px;
+}
+
+.checkbox_wrapper label::before {
+    top: 0;
+    left: 0;
+    position: absolute;
+
+    content: "";
+    width: 24px;
+    height: 24px;
+    border: 1px black solid;
+    border-radius: 3px;
+}
+
+
 button {
     background-color: var(--color-accent);
     border-radius: 8px;
@@ -64,6 +93,11 @@ button {
     color: var(--color-secondary);
     padding: 16px 32px;
     font-size: 18px;
+}
+
+button[disabled]{
+    background-color: lightgrey;
+    color: gray;
 }
 
 button:hover {
@@ -501,7 +535,7 @@ body {
     top: 8px;
     width: 32px;
     height: 32px;
-    fill: var(--color-accent)
+    fill: var(--color-accent);
 }
 
 .input-text {
@@ -513,6 +547,19 @@ body {
     background-color: transparent;
 
     font-size: 18px;
+}
+
+/* disable input */
+.input-text:disabled {
+    border-color: gray;
+}
+
+.input-text:disabled::placeholder {
+    color: gray;
+}
+
+.input-wrapper:has(.input-text:disabled) .input-icon {
+    fill: gray;
 }
 
 .input-text::placeholder {

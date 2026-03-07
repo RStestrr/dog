@@ -185,21 +185,22 @@
                         <h2>Our experts will take care of your friend</h2>
                         <p class="contact_note">Fill out the form so we can contact you!</p>
                         <!-- contact form -->
-                        <form autocomplete="off">
+                        <form name="contact-form" autocomplete="off">
                             <div class="contact-form">
                                 <div class="input-wrapper">
                                     <svg class="input-icon">
                                         <use href="/images/svg/form.svg#icon-people"></use>
                                     </svg>
                                     <label class="input-label visually-hidden" for="name">Your name</label>
-                                    <input class="input-text" type="text" name="name" id="name" placeholder="Your name">
+                                    <input required class="input-text" type="text" name="name" id="name"
+                                        placeholder="Your name">
                                 </div>
                                 <div class="input-wrapper">
                                     <svg class="input-icon">
                                         <use href="/images/svg/form.svg#icon-dog-bark"></use>
                                     </svg>
                                     <label class="input-label visually-hidden" for="pat-name">Pet name</label>
-                                    <input class="input-text" type="text" name="pat-name" id="pat-name"
+                                    <input required class="input-text" type="text" name="pat-name" id="pat-name"
                                         placeholder="Pet name">
                                 </div>
                                 <div class="input-wrapper">
@@ -207,7 +208,7 @@
                                         <use href="/images/svg/form.svg#icon-phone"></use>
                                     </svg>
                                     <label class="input-label visually-hidden" for="phone">Your phone</label>
-                                    <input class="input-text" type="tel" name="phone" id="phone"
+                                    <input required class="input-text" type="tel" name="phone" id="phone"
                                         placeholder="Your phone">
                                 </div>
                                 <div class="input-wrapper">
@@ -215,12 +216,12 @@
                                         <use href="/images/svg/form.svg#icon-email"></use>
                                     </svg>
                                     <label class="input-label visually-hidden" for="email">Your email</label>
-                                    <input class="input-text" type="email" name="email" id="email"
+                                    <input required class="input-text" type="email" name="email" id="email"
                                         placeholder="Your email">
                                 </div>
                                 <button>Contact us</button>
                                 <!-- I agree to the privacy policy -->
-                                <div>
+                                <div class="checkbox_wrapper">
                                     <input type="checkbox" name="privacy" id="privacy">
                                     <label for="privacy">I agree to the privacy policy</label>
                                 </div>
@@ -275,7 +276,7 @@
                         </div>
                         <button>Contact us</button>
                         <!-- I agree to the privacy policy -->
-                        <div>
+                        <div class="checkbox_wrapper">
                             <input type="checkbox" name="privacy-footer" id="privacy-footer">
                             <label for="privacy-footer">I agree to the privacy policy</label>
                         </div>
@@ -292,20 +293,21 @@
             <button class="modal-btn-close" type="button"></button>
             <div class="modal-content">
                 <h2 class="title">Our experts will take care of your friend</h2>
-                <form class="contacts_form" autocomplete="off">
+                <form name="modal-contact-form" class="contacts_form" autocomplete="off">
                     <div class="input-wrapper">
                         <svg class="input-icon">
                             <use href="/images/svg/form.svg#icon-people"></use>
                         </svg>
                         <label class="visually-hidden" for="modal-name">Your name</label>
-                        <input class="input-text" type="text" name="modal-name" id="modal-name" placeholder="Your name">
+                        <input required class="input-text" type="text" name="modal-name" id="modal-name"
+                            placeholder="Your name">
                     </div>
                     <div class="input-wrapper">
                         <svg class="input-icon">
                             <use href="/images/svg/form.svg#icon-dog-bark"></use>
                         </svg>
                         <label class="visually-hidden" for="modal-pat-name">Pet name</label>
-                        <input class="input-text" type="text" name="pat-name" id="modal-pat-name"
+                        <input required class="input-text" type="text" name="pat-name" id="modal-pat-name"
                             placeholder="Pet name">
                     </div>
                     <div class="input-wrapper">
@@ -313,20 +315,22 @@
                             <use href="/images/svg/form.svg#icon-phone"></use>
                         </svg>
                         <label class="visually-hidden" for="modal-phone">Your phone</label>
-                        <input class="input-text" type="tel" name="phone" id="modal-phone" placeholder="Your phone">
+                        <input required class="input-text" type="tel" name="phone" id="modal-phone"
+                            placeholder="Your phone">
                     </div>
                     <div class="input-wrapper">
                         <svg class="input-icon">
                             <use href="/images/svg/form.svg#icon-email"></use>
                         </svg>
                         <label class="visually-hidden" for="modal-email">Your email</label>
-                        <input class="input-text" type="email" name="email" id="modal-email" placeholder="Your email">
+                        <input required class="input-text" type="email" name="email" id="modal-email"
+                            placeholder="Your email">
                     </div>
-                    <button>Contact us</button>
+                    <button disabled type="submit">Contact us</button>
                     <!-- I agree to the privacy policy -->
-                    <div>
-                        <input type="checkbox" name="privacy" id="privacy">
-                        <label for="privacy">I agree to the privacy policy</label>
+                    <div class="checkbox_wrapper">
+                        <input type="checkbox" name="privacy" id="modal-privacy">
+                        <label for="modal-privacy">I agree to the privacy policy</label>
                     </div>
                 </form>
             </div>
