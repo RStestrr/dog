@@ -1,0 +1,41 @@
+.contact-section {
+    padding-top: 148px;
+
+    background-image: url(../images/bg/contact_bg.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+
+.contact-wrapper {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    max-width: 1290px;
+    margin: 0 auto;
+}
+
+.contact-content h2 {
+    font-size: 52px;
+    text-align: center;
+}
+
+.contact_note {
+    font-size: 18px;
+    color: var(--color-blue);
+    text-align: center;
+}
+
+.contact-form {
+    margin-top: 42px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 24px;
+}
+
+.contact-form .input-text {
+    width: 600px;
+    height: 48px;
+}

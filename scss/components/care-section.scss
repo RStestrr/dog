@@ -1,0 +1,39 @@
+.care-section {
+    position: relative;
+    padding-top: 217px;
+
+    background-image: url(../images/bg/care_bg.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+
+.care-container {
+    display: flex;
+    gap: 20px;
+}
+
+.care-container .text {
+    width: 55%;
+}
+
+.care-dog-wrapper {
+    flex-grow: 1;
+}
+
+.care-text-wrapper {
+    width: 500px;
+}
+
+.care-container::after {
+    content: '';
+    margin-top: 5%;
+
+    background-image: url(../images/care-dog.png);
+    background-repeat: no-repeat;
+    background-size: unset;
+    background-position: center;
+
+    width: 506px;
+    height: 516px;
+}

@@ -1,0 +1,27 @@
+.checkbox_wrapper {
+    position: relative;
+}
+
+.checkbox_wrapper input {
+    appearance: none;
+}
+
+.checkbox_wrapper input:checked+label::before {
+    background-color: #FF9F0E;
+}
+
+.checkbox_wrapper label {
+    padding-left: 20px;
+}
+
+.checkbox_wrapper label::before {
+    top: 0;
+    left: 0;
+    position: absolute;
+
+    content: "";
+    width: 24px;
+    height: 24px;
+    border: 1px black solid;
+    border-radius: 3px;
+}

@@ -1,0 +1,1 @@
+.checkbox_wrapper{position:relative}.checkbox_wrapper input{appearance:none}.checkbox_wrapper input:checked+label::before{background-color:#ff9f0e}.checkbox_wrapper label{padding-left:20px}.checkbox_wrapper label::before{top:0;left:0;position:absolute;content:"";width:24px;height:24px;border:1px #000 solid;border-radius:3px}/*# sourceMappingURL=checkbox.css.map */

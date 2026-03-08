@@ -1,0 +1,1 @@
+button{background-color:var(--color-accent);border-radius:8px;border-style:none;cursor:pointer;color:var(--color-secondary);padding:16px 32px;font-size:18px}button[disabled]{background-color:#d3d3d3;color:gray}button:hover{background-color:var(--color-accent-hover)}/*# sourceMappingURL=button.css.map */

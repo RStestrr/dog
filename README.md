@@ -1,6 +1,6 @@
 # dog
 
-Learning HTML --- lesson 16
+Learning HTML --- lesson 17
 
 ## Spacing and Offset Principles
 
