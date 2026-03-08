@@ -64,7 +64,7 @@ h2 {
     appearance: none;
 }
 
-.checkbox_wrapper input:checked + label::before {
+.checkbox_wrapper input:checked+label::before {
     background-color: #FF9F0E;
 }
 
@@ -95,7 +95,7 @@ button {
     font-size: 18px;
 }
 
-button[disabled]{
+button[disabled] {
     background-color: lightgrey;
     color: gray;
 }
@@ -526,7 +526,8 @@ body {
 
 .input-wrapper {
     width: 100%;
-    position: relative;;
+    position: relative;
+    ;
 }
 
 .input-icon {
@@ -626,7 +627,7 @@ body {
     padding: 0;
     width: 32px;
     height: 32px;
-    top:0;
+    top: 0;
     right: 0;
     margin-top: 3%;
     margin-right: 3%;
