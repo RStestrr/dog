@@ -1,6 +1,6 @@
 # dog
 
-Learning HTML --- lesson 17
+Learning HTML --- lesson 17 - 30.00
 
 ## Spacing and Offset Principles
 
@@ -23,14 +23,27 @@ In another words:
 ## Z-index works only with elm with positions not static (relative, absolute, fixed)
 
 ## Transform common use
- - transform: rotate(180deg); // rotate;
- - transform: translateX: 100% // offset ouf screen;
- on click, move back to screen
- - transform: translateX: 0;
 
- ## checkbox
- - we cannot style it, we should visually hide checkbox input, and leave label.
- - then we need to create wrapper with relative position and add absolute position before to the label an style it
+- transform: rotate(180deg); // rotate;
+- transform: translateX: 100% // offset ouf screen;
+  on click, move back to screen
+- transform: translateX: 0;
 
- ## Hot keys
+## checkbox
+
+- we cannot style it, we should visually hide checkbox input, and leave label.
+- then we need to create wrapper with relative position and add absolute position before to the label an style it
+
+## Hot keys
+
 CMD + M // wrap with div for example
+
+## BEM
+
+- B - block
+- E - element
+- M - modifier
+
+- B  (header) Who?
+- E  (header__container) Who? in Block
+- M  (banner banner--success) What? together with E

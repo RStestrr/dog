@@ -1,8 +1,10 @@
 .walk-section {
     position: relative;
+
+    &__container {
+        display: flex;
+        gap: 65px;
+    }
 }
 
-.walk-container {
-    display: flex;
-    gap: 65px;
-}
+

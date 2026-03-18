@@ -6,34 +6,34 @@
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
-}
 
-.care-container {
-    display: flex;
-    gap: 20px;
-}
+    &__container {
+        display: flex;
+        gap: 20px;
+    }
 
-.care-container .text {
-    width: 55%;
-}
+    &__text {
+        width: 55%;
+    }
 
-.care-dog-wrapper {
-    flex-grow: 1;
-}
+    &__main-title {
+        font-size: 72px;
+    }
 
-.care-text-wrapper {
-    width: 500px;
-}
+    &__text-wrapper {
+        width: 500px;
+    }
 
-.care-container::after {
-    content: '';
-    margin-top: 5%;
+    &__container::after {
+        content: '';
+        margin-top: 5%;
 
-    background-image: url(../images/care-dog.png);
-    background-repeat: no-repeat;
-    background-size: unset;
-    background-position: center;
+        background-image: url(../images/care-dog.png);
+        background-repeat: no-repeat;
+        background-size: unset;
+        background-position: center;
 
-    width: 506px;
-    height: 516px;
+        width: 506px;
+        height: 516px;
+    }
 }
