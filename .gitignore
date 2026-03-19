@@ -1,2 +1,5 @@
 # Compiled CSS files
 css/
+
+# macOS system files
+.DS_Store
