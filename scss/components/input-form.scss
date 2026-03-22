@@ -8,56 +8,58 @@
     gap: 24px;
 }
 
-.input-wrapper {
+.input {
     width: 100%;
     position: relative;
+
+    &__icon {
+        position: absolute;
+        left: 8px;
+        top: 8px;
+        width: 32px;
+        height: 32px;
+        fill: var(--color-accent);
+    }
+
+    &__text {
+        padding: 8px 45px;
+        width: 100%;
+        height: 48px;
+        border-radius: 5px;
+        border: 1px solid var(--color-accent);
+        background-color: transparent;
+
+        font-size: 18px;
+    }
+
+    &__text::placeholder {
+        color: var(--color-accent);
+    }
+
+    &__text:focus {
+        outline: none;
+    }
+
+    &__text:focus::placeholder {
+        color: black;
+    }
+
+    /* disable input */
+    &__text:disabled {
+        border-color: gray;
+    }
+
+    &__text:disabled::placeholder {
+        color: gray;
+    }
+
+    &__label {
+        display: block;
+    }
 }
 
-.input-icon {
-    position: absolute;
-    left: 8px;
-    top: 8px;
-    width: 32px;
-    height: 32px;
-    fill: var(--color-accent);
-}
 
-.input-text {
-    padding: 8px 45px;
-    width: 100%;
-    height: 48px;
-    border-radius: 5px;
-    border: 1px solid var(--color-accent);
-    background-color: transparent;
 
-    font-size: 18px;
-}
-
-/* disable input */
-.input-text:disabled {
-    border-color: gray;
-}
-
-.input-text:disabled::placeholder {
-    color: gray;
-}
-
-.input-wrapper:has(.input-text:disabled) .input-icon {
+.input:has(.input-text:disabled) .input-icon {
     fill: gray;
-}
-
-.input-text::placeholder {
-    color: var(--color-accent);
-}
-
-.input-text:focus {
-    outline: none;
-}
-
-.input-text:focus::placeholder {
-    color: black;
-}
-
-.input-label {
-    display: block;
 }
